@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+    <string name="server_url">YOUR_SERVER_URL</string>
+
+    <!-- Change the following strings as required -->
+    <string name="app_id">YOUR_APP_ID</string>
+    <string name="client_key">YOUR_CLIENT_KEY</string>
+</resources>
+
