@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.parse.Parse;
 import com.parse.ParseACL;
 import com.parse.ParseException;
@@ -43,6 +45,7 @@ public class SignUp extends AppCompatActivity {
         btn = (Button) findViewById(R.id.signUp);
 
     //   app();
+
 
        btn.setOnClickListener(new View.OnClickListener() {
            @Override

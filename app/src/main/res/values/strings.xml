@@ -5,5 +5,8 @@
     <!-- Change the following strings as required -->
     <string name="app_id">YOUR_APP_ID</string>
     <string name="client_key">YOUR_CLIENT_KEY</string>
+    <string name="facebook_app_id">527105061307182</string>
+    <string name="fb_login_protocol_scheme">fb527105061307182</string>
+
 </resources>
 

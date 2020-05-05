@@ -17,6 +17,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.parse.Parse;
 import com.parse.ParseACL;
 import com.parse.ParseException;
@@ -124,6 +126,17 @@ public class Profile extends AppCompatActivity {
         profile_email = (TextView) findViewById(R.id.profile_email);
 
         //Toast.makeText(this, ParseUser.getCurrentUser().get("username").toString(), Toast.LENGTH_SHORT).show();
+
+        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
+        if (acct != null) {
+            String personName = acct.getDisplayName();
+            String personEmail = acct.getEmail();
+            String personId = acct.getId();
+
+            profile_name.setText(personName);
+            profile_email.setText(personEmail);
+
+        }
 
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser != null){
